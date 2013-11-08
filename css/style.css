@@ -8,7 +8,10 @@ div {
 
 #logo {
 	max-height: 200px;
-	max-width: 100%
+	max-width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 p, h1, h2 {

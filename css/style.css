@@ -1,7 +1,16 @@
-div {
-	/*border-width: 2px;
-	border-style: solid;
-	background-color: grey;*/
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+p, h1, h2 {
+	text-align: center;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
 }
 
 #logo {
@@ -12,22 +21,25 @@ div {
 	margin-right: auto;
 }
 
-p, h1, h2 {
-	text-align: center;
+#header_container {
+	height: 230px;
+	margin-bottom: 20px;
 }
 
-#header_container {
+#title_container, #logo_container {
 	height: 220px;
 }
 
-#body_container {
-
+#title {
+	height: 50px;
 }
 
-#header_container div {
-	margin: 5px;
-	background-color: grey;
-	border-style: solid;
-	border-color: black;
-	border-width: 2px;
+#about {
+	height: 170px;
+}
+
+@media(max-width: 992px) {
+	#nav_container {
+		margin-top: 20px;
+	}
 }

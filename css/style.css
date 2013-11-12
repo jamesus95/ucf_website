@@ -1,10 +1,8 @@
 div {
-/*	border-style: solid;
-	border-width: 5px;
-	border-color: red;
-	padding: auto;
-	margin: auto;
-*/}
+	/*border-width: 2px;
+	border-style: solid;
+	background-color: grey;*/
+}
 
 #logo {
 	max-height: 200px;
@@ -16,4 +14,20 @@ div {
 
 p, h1, h2 {
 	text-align: center;
+}
+
+#header_container {
+	height: 220px;
+}
+
+#body_container {
+
+}
+
+#header_container div {
+	margin: 5px;
+	background-color: grey;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
 }

@@ -13,7 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
 		<link rel="stylesheet" type="text/css" href="../css/layout.css">
 
-		<title>UCF UW</title>
+		<title>UCF Events</title>
 	</head>
 
 	<body>
@@ -53,15 +53,15 @@
 
 				<div class="col-xs-12 hidden-md hidden-lg" id="sm-about_container">
 					<h2>What We're About:</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
 				</div>
 
 			</div>
 
 			<div class="row">
 				<div class="col-xs-12" id="map">
-					<a href="index.htm">Home</a>
+					<a href="index.htm">Home</a> >> <a href="events.htm">Events</a>
 				</div>
 			</div>
 
@@ -88,25 +88,12 @@
 
 					<div class="row">
 						<div class="col-md-12" id="content_container">
-							
 							<div class="row">
-								<div class="col-lg-5 col-md-8" id="thisweek_container">
-									<h2>This Week in UCF: </h2>
+								<div class="col-lg-8 col-xs-12" id="thismonth_container">
+									Stuff for this month
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-								</div>
-								<div class="col-lg-4 hidden-md hidden-sm hidden-xs" id="picture_container">
-									<h2>Picture of the Week</h2>
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -114,25 +101,67 @@
 									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 								</div>
-								<div class="col-lg-3 col-md-4 hidden-sm hidden-xs" id="events_container">
-									<h2>Upcoming Events</h2>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+
+								<div class="col-lg-8 col-xs-12" id="sw-nextmonth_container">
+									Stuff for next month
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt lit, sed do eiusmod
 									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									quis nostrud exercitquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+
+								<div class="col-lg-4 hidden-md hidden-sm hidden-xs" id="nextmonth_container">
+									Stuff for NEXT month
 									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 								</div>
 							</div>
-
 						</div>
 					</div>
+					<div class="row hidden-lg" id="switch button">
+						<div class="btn-group">
+							<button type="button" class="btn-default" id="nm_button">Next Month</button>
+							<button type="button" class="btn-default" id="pm_button">Previous Month</button>
+	 					</div>
+					</div>
 				</div>
-
+					
 			</div>
 
 		</div>
 
+		<script>
+			$("#pm_button").hide();
+			$("#sw-nextmonth_container").hide();
+			$("#nm_button").click(function(event) {
+				$("#nm_button").hide();
+				$("#pm_button").show();
+				$("#sw-nextmonth_container").show();
+				$("#thismonth_container").hide();
+			});
+			$("#pm_button").click(function(event) {
+				$("#pm_button").hide();
+				$("#nm_button").show();
+				$("#sw-nextmonth_container").hide();
+				$("#thismonth_container").show();
+				alert("Hello");
+			});
+		</script>
+		<script src="../js/event_creator.js"></script>
+		<script src="../js/event_lib.js"></script>
+		<script>
+			writeEvents();
+			$(".event").click(function(event) {
+				alert(event.target.id)
+				document.cookie = "event=" + event.target.id;
+				alert(document.cookie);
+			});
+		</script>
 	</body>
 
 </html>

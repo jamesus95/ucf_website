@@ -1,0 +1,26 @@
+h2 {
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	margin-top: 10px;
+}
+
+#header_container {
+	border: 2px black solid;
+}
+
+#body_container {
+	border: 2px black solid;
+}
+
+@media(max-width: 992px) {
+
+	#body_container {
+		border: none;
+	}
+
+	#nav_container, #important_container, #content_container > div  {
+		border: 2px black solid;
+	}
+
+}

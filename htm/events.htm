@@ -59,6 +59,12 @@
 
 			</div>
 
+			<div class="row">
+				<div class="col-xs-12" id="map">
+					<a href="index.htm">Home</a> >> <a href="events.htm">Events</a>
+				</div>
+			</div>
+
 			<div class="row" id="body_container">
 
 				<div class="col-md-2" id="nav_container">
@@ -85,14 +91,34 @@
 							<div class="row">
 								<div class="col-lg-8 col-xs-12" id="thismonth_container">
 									Stuff for this month
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 								</div>
 
-								<div class="col-lg-8 col-xs-12" id="nextmonth_container">
+								<div class="col-lg-8 col-xs-12" id="sw-nextmonth_container">
 									Stuff for next month
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt lit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 								</div>
 
 								<div class="col-lg-4 hidden-md hidden-sm hidden-xs" id="nextmonth_container">
 									Stuff for NEXT month
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 								</div>
 							</div>
 						</div>
@@ -109,25 +135,25 @@
 
 		</div>
 
-		
-
-		<script src="../js/style.js"></script>
 		<script>
 			$("#pm_button").hide();
-			$("#nextmonth_container").hide();
+			$("#sw-nextmonth_container").hide();
 			$("#nm_button").click(function(event) {
 				$("#nm_button").hide();
 				$("#pm_button").show();
-				$("#nextmonth_container").show();
+				$("#sw-nextmonth_container").show();
 				$("#thismonth_container").hide();
 			});
 			$("#pm_button").click(function(event) {
 				$("#pm_button").hide();
 				$("#nm_button").show();
-				$("#nextmonth_container").hide();
+				$("#sw-nextmonth_container").hide();
 				$("#thismonth_container").show();
 			});
 		</script>
+		<script src="../js/event_creator.js"></script>
+		<script src="../js/event_lib.js"></script>
+		<script type="text/javascript">writeEvents();</script>
 	</body>
 
 </html>

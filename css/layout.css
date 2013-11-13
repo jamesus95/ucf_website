@@ -33,7 +33,8 @@
 }
 
 #body_container {
-	height: 500px;
+	/*height: 500px;*/
+	padding-bottom: 10px;
 }
 
 #important_container {
@@ -42,12 +43,16 @@
 }
 
 #page-content_container {
-	height: 450px;
+	/*height: 450px;*/
 }
 
 #nav_container {
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+
+#map {
+	padding-bottom: 10px;
 }
 
 @media(max-width: 992px) {

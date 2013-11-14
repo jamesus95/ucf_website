@@ -13,14 +13,30 @@ h2 {
 	border: 2px black solid;
 }
 
+#leader_container > div {
+	height: 100px;
+}
+
+#logo_container {
+	background-image: url('../img/ucf_logo.jpg');
+	background-size: 100%;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    #logo_container {
+        background-image: url("../img/ucf_logo_HR.jpg");
+        background-size: 100%;
+}
+
 @media(max-width: 992px) {
 
 	#body_container {
 		border: none;
 	}
 
-	#nav_container, #important_container, #content_container > div  {
+	#nav_container, #important_container, #content_container  {
 		border: 2px black solid;
 	}
 
 }
+

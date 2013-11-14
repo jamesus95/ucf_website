@@ -59,7 +59,7 @@ function displayEvent() {
 		}
 	}
 	if (j > -1) {
-		$("#content_container").append(printLong(events[j]));
+		$("#content_container").append('<div class="col-xs-12">' + printLong(events[j]) + "</div>");
 		$("#map_dyn").html(events[j].title);
 		$("title").html(events[j].title);
 	}

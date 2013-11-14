@@ -20,6 +20,7 @@ h2 {
 #logo_container {
 	background-image: url('../img/ucf_logo.jpg');
 	background-size: 100%;
+	background-repeat: no-repeat;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

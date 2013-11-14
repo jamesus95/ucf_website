@@ -149,7 +149,6 @@
 				$("#nm_button").show();
 				$("#sw-nextmonth_container").hide();
 				$("#thismonth_container").show();
-				alert("Hello");
 			});
 		</script>
 		<script src="../js/event_creator.js"></script>
@@ -157,9 +156,7 @@
 		<script>
 			writeEvents();
 			$(".event").click(function(event) {
-				alert(event.target.id)
 				document.cookie = "event=" + event.target.id;
-				alert(document.cookie);
 			});
 		</script>
 	</body>

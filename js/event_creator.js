@@ -20,8 +20,13 @@ function writeEvents() {
 }
 
 function displayEvent() {
-	var id = document.cookie.split("=");
-	id = id[1];
+	var e = document.cookie.split("; ");
+	var id = "";
+	for (var i = 0; i < e.length; i++) {
+		if (e[i].slice(0,6) == "event=") {
+			id = e[i].split("=")[1];
+		}
+	}
 	var j = -1;
 	for (var i = 0; i < events.length; i++) {
 		if (events[i].id == id) {

@@ -1,76 +1,47 @@
-#header_container {
-	height: 250px;
-	margin-bottom: 10px;
+/*  UCF Purple: #320957;
+	Background Purple: #DCC7F0;
+	UCF Gold: #FEFDAA;
+	Background Gold: #FFFFE0;
+*/
+
+/*Make the logo fit*/
+#logo_container > img {
+	max-height: 100%;
+	width: 100%;
 }
 
-#logo_container, #title-about_container {
-	height: 230px;
+/*Separate the bread crumb map from head and body*/
+#map_container {
 	margin-top: 10px;
 	margin-bottom: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
-#logo {
-	max-width: 100%;
-	margin-top: 5px;
-	margin-bottom: 5px;
+/*Padding for background color*/
+#about_container > div, ul, #important_container > *, #content_row > * > * {
+	padding: 5px 10px;
+}
+
+/*Separate from things above*/
+ul, #content_row > *, #important_container, #sm-about_container {
+	margin-top: 10px;
+}
+
+/*Center nav links*/
+nav a {
 	display: block;
-	margin-left: auto;
 	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
 }
 
-#title_container, #sm-title_container {
-	height: 40px;
-	text-align: center;
+/*Spacing h2 tags*/
+h2 {
 	margin: 0;
 	padding: 0;
 }
 
-#about_container {
-	text-align: left;
-	height: 170px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-#body_container {
-	padding-bottom: 10px;
-}
-
-#important_container {
-	height: 40px;
-	margin-bottom: 10px;
-}
-
-#nav_container {
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-#map {
-	padding-bottom: 10px;
-}
-
-@media(max-width: 992px) {
-
-	.container {
-		max-width: 300px;
-	}
-
-	#logo, #logo_container {
-		height: 60px;
-		min-width: 73px;
-	}
-
-	#sm-title_container, #title-about_container {
-		height: 60px;
-	}
-
-	#header_container {
-		height: 220px;
-	}
-
-	#sm-about_container {
-		height: 90px;
-	}
-
+h1 {
+	text-align: center;
 }

@@ -7,18 +7,6 @@ var thisMonth = $("#thismonth_container");
 var nextMonth = $("#nextmonth_container");
 var swNextMonth = $("#sw-nextmonth_container");
 
-function makeEvent(monthi, dayi, yeari, timei, descriptioni, titlei, idi) {
-	var e = {
-		month: monthi,
-		day: dayi,
-		startTime: timei,
-		descript: descriptioni,
-		title: titlei,
-		id: idi,
-		year: yeari
-	}
-	return e;
-}
 
 function printLong(event) {
 	var s = event.title + "<br>" +
@@ -27,11 +15,6 @@ function printLong(event) {
 	event.descript;
 	return s;
 }
-
-var events = new Array();
-events.push(makeEvent(11, 15, 2013, "7:07pm", "Regular Meeting", "Friday UCF Meeting", "1115707"));
-events.push(makeEvent(11, 22, 2013, "7:07pm", "Regular Meeting 2", "Friday UCF Meeting 2", "1122707"))
-events.push(makeEvent(12, 10, 2013, "7:07pm", "Regular Meeting", "Friday UCF Meeting", "1210707"))
 
 function writeEvents() {
 	for (var i = 0; i < events.length; i++) {
@@ -59,7 +42,7 @@ function displayEvent() {
 		}
 	}
 	if (j > -1) {
-		$("#content_container").append('<div class="col-xs-12">' + printLong(events[j]) + "</div>");
+		$("#content_row").append('<div class="col-xs-12"><div>' + printLong(events[j]) + "</div></div>");
 		$("#map_dyn").html(events[j].title);
 		$("title").html(events[j].title);
 	}

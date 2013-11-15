@@ -1,0 +1,27 @@
+/*  UCF Purple: #320957;
+	Background Purple: #DCC7F0;
+	UCF Gold: #FEFDAA;
+	Background Gold: #FFFFE0;
+*/
+
+@media(max-width: 992px) {
+
+	.container {
+		width: 400px;
+	}
+
+	#map_container {
+		margin-top: 0;
+	}
+
+	#important_container {
+		margin-top: 0;
+	}
+
+}
+
+/*@media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    #logo_container {
+        background-image: url("../img/ucf_logo_HR.jpg");
+        background-size: 100%;
+}*/

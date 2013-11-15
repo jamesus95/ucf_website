@@ -1,4 +1,8 @@
-$("#nav_container").html('<nav><ul><li><a href="index.htm">Home</a></li><li><a href="events.htm">Events</a></li><li><a href="leaders.htm">Leaders</a></li><li><a href="missions.htm">Missions</a></li>');
+if ($("title").html() != "UCF UW") {
+	$("#nav_container").html('<nav><ul><li><a href="../index.htm">Home</a></li><li><a href="events.htm">Events</a></li><li><a href="leaders.htm">Leaders</a></li><li><a href="missions.htm">Missions</a></li>');
+} else {
+	$("#nav_container").html('<nav><ul><li><a href="index.htm">Home</a></li><li><a href="htm/events.htm">Events</a></li><li><a href="htm/leaders.htm">Leaders</a></li><li><a href="htm/missions.htm">Missions</a></li>');
+}
 
 // $("#logo_container").html('<img src="../img/ucf_logo.jpg" id="logo">');
 $("#title_container").html('<h1>University Christian Fellowship UW</h1>');

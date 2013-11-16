@@ -41,10 +41,10 @@ function load() {
 	$("#sm-about_container").html('<div><h2>What We\'re About:</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p></div>');
 	if ($("title").attr("id") != "index") {
 		appendNav("../", "");
-		$("#logo_container").html('<img src="../img/ucf_logo.jpg">');
+		$("#logo_container").html('<span data-picture data-alt=" " class="picture"><span data-src="../img/ucf_logo.jpg"></span><span data-src="../img/ucf_logo_HR.jpg" data-media="(min-device-pixel-ratio: 2.0)"></span></span>');
 	} else {
 		appendNav("", "htm/");
-		$("#logo_container").html('<img src="img/ucf_logo.jpg">');
+		$("#logo_container").html('<span data-picture data-alt=" " class="picture"><span data-src="img/ucf_logo.jpg"></span><span data-src="img/ucf_logo_HR.jpg" data-media="(min-device-pixel-ratio: 2.0)"></span></span>');
 	}
 	$("#important_container").html('<h2>' + imp + '</h2>');
 }
@@ -52,8 +52,10 @@ function load() {
 // MAIN
 if ($("title").attr("id") != "index") {
 	appendCSS("../");
+	$("head").append('<script src="../libs/picturefill.js"></script>');
 } else {
 	appendCSS("");
+	$("head").append('<script src="libs/picturefill.js"></script>');
 }
 // HOME WORK EXTRA CREDIT
-//setTimeout('alert("Hello You\'ve been here 3 seconds")', 3000);
+setTimeout('alert("Hello You\'ve been here 3 seconds")', 3000);

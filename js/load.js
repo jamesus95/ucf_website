@@ -25,13 +25,13 @@ function appendCSS(index) {
 }
 
 // Array of navs
-var tabs = ["Home", "index.htm", "Events", "events.htm", "Teams", "teams.htm", "Missions", "missions.htm", "Cores", "cores.htm", "Contact", "contact.htm", "About", "about.htm"];
+var tabs = ["Home", "index.htm", "Events", "events.htm", "Teams", "teams.htm", "Service Activities", "service.htm", "Cores", "cores.htm", "Contact", "contact.htm", "About", "about.htm"];
 
 // Array of CSS documents
 var css = ["libs/bootstrap-theme.min.css", "libs/bootstrap.min.css", "css/style.css", "css/layout.css", "css/state.css"];
 
 // Important Announcement
-var imp = "IMPORANT: Announcement!!";
+var imp = "IMPORANT: SITE UNDER CONSTRUCTION";
 
 function load() {
 	// Title and about sections

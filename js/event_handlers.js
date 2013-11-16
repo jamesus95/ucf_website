@@ -12,3 +12,11 @@ $("#pm_button").click(function(event) {
 	$("#sw-nextmonth_container").hide();
 	$("#thismonth_container").show();
 });
+$(window).resize(function() {
+	if (window.innerWidth > 1200) {
+		$("#nm_button").show();
+		$("#pm_button").hide();
+		$("#sw-nextmonth_container").hide();
+		$("#thismonth_container").show();
+	}
+});

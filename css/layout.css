@@ -19,12 +19,12 @@
 }
 
 /*Padding for background color*/
-#about_container > div, ul, #important_container > *, #content_row > * > * {
+#about_container > div, ul, #important_container > *, #content_row > * > *, #sm-about_container > div {
 	padding: 5px 10px;
 }
 
 /*Separate from things above*/
-ul, #content_row > *, #important_container, #sm-about_container {
+ul, #content_row > * > *, #important_container, #sm-about_container {
 	margin-top: 10px;
 }
 
@@ -44,4 +44,8 @@ h2 {
 
 h1 {
 	text-align: center;
+}
+
+.container, body, html {
+	/*height: 100%;*/
 }

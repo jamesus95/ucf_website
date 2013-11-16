@@ -20,8 +20,8 @@
 
 }
 
-/*@media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media print and (min-resolution: 10dpi) {
     #logo_container {
-        background-image: url("../img/ucf_logo_HR.jpg");
-        background-size: 100%;
-}*/
+    	background-color: rgba(0, 0, 0, 0);
+    }
+}

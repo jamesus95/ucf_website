@@ -46,6 +46,18 @@ h1 {
 	text-align: center;
 }
 
-.container, body, html {
-	/*height: 100%;*/
+#about_container {
+	margin-bottom: 10px;
+}
+
+img {
+	max-width: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#sm-title_container {
+	margin-left: -20px;
+	height: 85px;
 }

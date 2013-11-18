@@ -18,10 +18,8 @@
 		margin-top: 0;
 	}
 
-}
+	#nav_container {
+		margin-bottom: 10px;
+	}
 
-@media print and (min-resolution: 10dpi) {
-    #logo_container {
-    	background-color: rgba(0, 0, 0, 0);
-    }
 }

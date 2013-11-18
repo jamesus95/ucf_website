@@ -1,32 +1,37 @@
 var date = new Date();
 var month = date.getMonth() + 1;
-var day = date.getDay() + 1;
+var day = date.getDate();
 var year = date.getFullYear();
+var weekDay = date.getDay() + 1;
 
 var thisMonth = $("#thismonth_container");
 var nextMonth = $("#nextmonth_container");
 var swNextMonth = $("#sw-nextmonth_container");
+var thisWeek = $("#thisweek_container");
+var eventsContainer = $("#events_container");
 
 
 function printLong(event) {
-	var s = event.title + "<br>" +
-	"Date: " + event.month + "/" + event.day + "/" + event.year + "<br>" +
-	"Time: " +  event.startTime + "<br>" +
-	event.descript;
-	return s;
+	return event.title + "<br>" + "Date: " + event.month + "/" + event.day + "/" + event.year + "<br>" + "Time: " +  event.startTime + "<br>" + event.descript;
 }
 
+function printShort(event) {
+	return event.month + "/" + event.day + " " + event.title;
+}
+
+// Event page
 function writeEvents() {
 	for (var i = 0; i < events.length; i++) {
 		if (events[i].month == month) {
-			thisMonth.append('<div><a class="event" id="' + events[i].id + '" href="event_dyn.htm">' + events[i].title + "</a> " + events[i].descript + "</div>");
-		} else if (events[i].month == month + 1) {
-			nextMonth.append('<div><a class="event" id="' + events[i].id + '" href="event_dyn.htm">' + events[i].title + "</a> " + events[i].descript + "</div>");
-			swNextMonth.append('<div><a class="event" id="' + events[i].id + '" href="event_dyn.htm">' + events[i].title + "</a> " + events[i].descript + "</div>");
+			thisMonth.append('<div><a class="event" id="' + events[i].id + '" href="event_dyn.htm">' + events[i].month + "/" + events[i].day + " " + events[i].title + "</a><br>" + events[i].descript + "</div>");
+		} else if (events[i].month == month + 1 || (events[i].month == 1 && month == 12)) {
+			nextMonth.append('<div><a class="event" id="' + events[i].id + '" href="event_dyn.htm">' + events[i].month + "/" + events[i].day + " " + events[i].title + "</a><br>" + events[i].descript + "</div>");
+			swNextMonth.append('<div><a class="event" id="' + events[i].id + '" href="event_dyn.htm">' + events[i].month + "/" + events[i].day + " " + events[i].title + "</a><br>" + events[i].descript + "</div>");
 		}
 	}
 }
 
+// Specific Event page
 function displayEvent() {
 	var e = document.cookie.split("; ");
 	var id = "";
@@ -45,5 +50,22 @@ function displayEvent() {
 		$("#content_row").append('<div class="col-xs-12"><div>' + printLong(events[j]) + "</div></div>");
 		$("#map_dyn").html(events[j].title);
 		$("title").html(events[j].title);
+	}
+}
+
+// Main page "this week" section
+function thisWeekEvents() {
+	for (var i = 0; i < events.length; i++) {
+		if (events[i].day - events[i].weekDay == day - weekDay) {
+			thisWeek.append('<div><a class="event" id="' + events[i].id + '" href="event_dyn.htm">' + events[i].month + "/" + events[i].day + " " + events[i].title + "</a><br>" + events[i].descript + "</div>");
+		}
+	}
+}
+
+function eventsUpcoming() {
+	for (var i = 0; i < events.length; i++) {
+		if (events[i].month == month) {
+			eventsContainer.append('<div><a class="event" id="' + events[i].id + '" href="event_dyn.htm">' + printShort(events[i]) + "</a><br>" + events[i].descript + "</div>");
+		}
 	}
 }

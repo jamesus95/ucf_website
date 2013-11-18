@@ -19,12 +19,17 @@
 }
 
 /*Padding for background color*/
-#about_container > div, ul, #important_container > *, #content_row > * > * {
+#about_container > div, ul, #important_container > *, #content_row > * > *, #sm-about_container > div {
 	padding: 5px 10px;
 }
 
+/*unpad the margin*/
+ul {
+	margin-bottom: 0;
+}
+
 /*Separate from things above*/
-ul, #content_row > *, #important_container, #sm-about_container {
+ul, #content_row > * > *, #important_container, #sm-about_container {
 	margin-top: 10px;
 }
 
@@ -44,4 +49,28 @@ h2 {
 
 h1 {
 	text-align: center;
+}
+
+/*spacing*/
+#about_container {
+	margin-bottom: 10px;
+}
+
+/*center logo*/
+img {
+	max-width: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*centering logo*/
+#sm-title_container {
+	margin-left: -20px;
+	height: 85px;
+}
+
+/*Get body off bottom*/
+#body_row {
+	padding-bottom: 10px;
 }

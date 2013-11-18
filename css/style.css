@@ -1,6 +1,6 @@
 /*  UCF Purple: #320957;
 	Background Purple: #DCC7F0;
-	UCF Gold: #FEFDAA;
+	UCF Gold: #FFFECA;
 	Background Gold: #FFFFE0;
 */
 
@@ -10,7 +10,7 @@ h2 {
 
 /*Background Color*/
 .container {
-	background-color: #FFFFE0;
+	background-color: white;
 }
 
 /*No bullets on nav links*/
@@ -24,11 +24,23 @@ nav a:hover {
 }
 
 /*box color*/
-#about_container > div, ul, #important_container > *, #content_row > * > *, #sm-about_container {
-	background-color: #DCC7F0;
+#about_container > div, ul, #important_container > *, #content_row > * > *, #sm-about_container > * {
+	background-color: #FFFECA;
+	border: solid 2px #320957;
+	border-radius: 15px;
 }
 
 /*border*/
-#header_container, #map_container, #body_row {
-	border: solid 2px black;
+#header_container, #body_row {
+	/*border: inset 5px black;*/
+}
+
+/*Sidebars background color*/
+body {
+	background-color: #320957;
+	color: #320957;
+}
+
+#important_container > * {
+	background-color: red;
 }

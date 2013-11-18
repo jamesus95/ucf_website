@@ -8,7 +8,8 @@
 		<script src="libs/jquery-1.9.1.js"></script>
 		<script src="libs/bootstrap.min.js"></script>
 
-		<title>UCF UW</title>
+		<title id="index">UCF UW</title>
+		<script src="js/load.js"></script>
 	</head>
 
 	<body>
@@ -16,7 +17,7 @@
 		<div class="container">
 			
 			<div class="row" id="header_container">
-				<div class="col-xs-3" id="logo_container"></div>
+				<div class="col-xs-4 col-md-3" id="logo_container"></div>
 				<div class="col-md-9 hidden-sm hidden-xs" id="title-about_container">
 					<div class="row" id="title_row">
 						<div class="col-md-12" id="title_container"></div>
@@ -25,13 +26,13 @@
 						<div class="col-md-12" id="about_container"></div>
 					</div>
 				</div>
-				<div class="col-xs-9 hidden-md hidden-lg" id="sm-title_container"></div>
+				<div class="col-xs-8 hidden-md hidden-lg" id="sm-title_container"></div>
 			</div>
 			<div class="row" id="sm-about_row">
 				<div class="col-xs-12 hidden-md hidden-lg" id="sm-about_container"></div>
 			</div>
 			<div class="row" id="map_row">
-				<div class="col-xs-12 col-md-9 col-md-offset-3" id="map_container">
+				<div class="col-xs-12 col-md-10 col-md-offset-2" id="map_container">
 					<a href="../index.htm">Home</a>
 				</div>
 			</div>
@@ -45,40 +46,17 @@
 						<div class="col-lg-5 col-md-8" id="thisweek_container">
 							<div>
 							<h2>This Week in UCF: </h2>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</div>
 						</div>
 						<div class="col-lg-4 hidden-md hidden-sm hidden-xs" id="picture_container">
 							<div>
 							<h2>Picture of the Week</h2>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							<img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-prn1/891621_10151936659771708_2080329190_o.jpg">
 							</div>
 						</div>
 						<div class="col-lg-3 col-md-4 hidden-sm hidden-xs" id="events_container">
 							<div>
 							<h2>Upcoming Events</h2>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</div>
 						</div>
 					</div>
@@ -87,7 +65,14 @@
 
 		</div>
 
-		<script src="js/load.js"></script>
+		<script src="js/event_lib.js"></script>
+		<script src="js/event_creator.js"></script>
+
+		<script>
+			load();
+			thisWeekEvents();
+			eventsUpcoming();
+		</script>
 
 	</body>
 

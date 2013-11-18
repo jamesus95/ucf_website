@@ -7,6 +7,7 @@
 
 		<script src="../libs/jquery-1.9.1.js"></script>
 		<script src="../libs/bootstrap.min.js"></script>
+		<script src="../js/load.js"></script>
 
 		<title>Teams</title>
 	</head>
@@ -16,7 +17,7 @@
 		<div class="container">
 			
 			<div class="row" id="header_container">
-				<div class="col-xs-3" id="logo_container"></div>
+				<div class="col-xs-4 col-md-3" id="logo_container"></div>
 				<div class="col-md-9 hidden-sm hidden-xs" id="title-about_container">
 					<div class="row" id="title_row">
 						<div class="col-md-12" id="title_container"></div>
@@ -25,13 +26,13 @@
 						<div class="col-md-12" id="about_container"></div>
 					</div>
 				</div>
-				<div class="col-xs-9 hidden-md hidden-lg" id="sm-title_container"></div>
+				<div class="col-xs-8 hidden-md hidden-lg" id="sm-title_container"></div>
 			</div>
 			<div class="row" id="sm-about_row">
 				<div class="col-xs-12 hidden-md hidden-lg" id="sm-about_container"></div>
 			</div>
 			<div class="row" id="map_row">
-				<div class="col-xs-12 col-md-9 col-md-offset-3" id="map_container">
+				<div class="col-xs-12 col-md-10 col-md-offset-2" id="map_container">
 					<a href="../index.htm">Home</a> >> <a href="teams.htm">Leaders</a>
 				</div>
 			</div>
@@ -53,7 +54,9 @@
 
 		</div>
 
-		<script src="../js/load.js"></script>
+		<script>
+			load();
+		</script>
 
 	</body>
 

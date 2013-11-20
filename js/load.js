@@ -17,6 +17,18 @@ function appendNav(index, other) {
 	$("#nav_container").html(s);
 }
 
+function appendNavDropdown(index, other) {
+	var s = "";
+	for (var i = 0; i < tabs.length; i += 2) {
+		if (i == 0) {
+			s += link(tabs[i], tabs[i + 1], index);
+		} else {
+			s += link(tabs[i], tabs[i + 1], other);
+		}
+	}
+	return s;
+}
+
 // Appends CSS documents
 function appendCSS(index) {
 	for (var i = 0; i < css.length; i++) {
@@ -31,7 +43,7 @@ function hide() {
 
 // Adjust screen size for small screens
 function size() {
-	
+
 }
 
 function load() {
@@ -42,8 +54,10 @@ function load() {
 	$("#sm-about_container").html('<div><h3>What We\'re About:</h3><p>UCF is a group of students at the University of Washington who desire to follow God with all we are.  We seek to be a place to belong, participate and transform.  We place high value on our friendships with each other and work hard to provide opportunities for them to both start and grow.  We welcome anyone to come and be part of UCF. <a href="htm/about.htm">click to read more...</a></p></div>');
 	if ($("title").attr("id") != "index") {
 		appendNav("../", "");
+		$("#nav-dropdown_container").html('<div class="dropdown"><a id="dropdown_link" class="bold" data-toggle="dropdown" href="#">Links</a><ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">' + appendNavDropdown("../", "") + '</ul></div>');
 	} else {
 		appendNav("", "htm/");
+		$("#nav-dropdown_container").html('<div class="dropdown"><a id="dropdown_link" class="bold" data-toggle="dropdown" href="#">Links</a><ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">' + appendNavDropdown("", "htm/") + '</ul></div>');
 	}
 	$("#important_container").html('<h3>' + imp + '</h3>');
 	$(window).ready(function() {

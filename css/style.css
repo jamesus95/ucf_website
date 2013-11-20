@@ -60,3 +60,15 @@ body {
 .contact {
 	word-wrap: break-word;
 }
+
+#dropdown_link {
+	text-decoration: none;
+	border: solid 2px #320957;
+	padding: 0px 5px;
+	border-radius: 5px;
+}
+
+#dropdown_link:hover {
+	background-color: #FFFECA;
+	color: #320957;
+}

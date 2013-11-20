@@ -79,3 +79,9 @@ img {
 .contact > p {
 	display: block;
 }
+
+/*center dropdown nav*/
+#nav-dropdown_container {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

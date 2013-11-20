@@ -25,29 +25,41 @@ function appendCSS(index) {
 }
 
 // Array of navs
-var tabs = ["Home", "index.htm", "Events", "events.htm", "Teams", "teams.htm", "Service Activities", "service.htm", "Cores", "cores.htm", "Contact", "contact.htm", "About", "about.htm"];
+var tabs = ["Home", "index.htm", "Activities", "activities.htm", "Teams", "teams.htm", "Service Activities", "service.htm", "Cores", "cores.htm", "Contact", "contact.htm", "About", "about.htm"];
 
 // Array of CSS documents
 var css = ["libs/bootstrap-theme.min.css", "libs/bootstrap.min.css", "css/style.css", "css/layout.css", "css/state.css"];
 
 // Important Announcement
-var imp = "IMPORANT: SITE UNDER CONSTRUCTION";
+var imp = "IMPORTANT: SITE UNDER CONSTRUCTION";
 
 function load() {
 	// Title and about sections
 	$("#title_container").html('<h1>University Christian Fellowship UW</h1>');
 	$("#sm-title_container").html('<h1>UCF UW</h1>');
-	$("#about_container").html('<div><h2>What We\'re About:</h2><p>UCF is a group of students at the University of Washington who desire to follow God with all we are.  We seek to be a place to belong, participate and transform.  We place high value on our friendships with each other and work hard to provide opportunities for them to both start and grow.  We welcome anyone to come and be part of UCF.  Whether you\'re just beginning to wonder about spirituality and who Jesus really is or have been following God for years, UCF is a place where you can ask questions, be challenged and grow by being a part of everything we are doing.  As each of us steps out to know Jesus better or to simply help those around us, we both take part in transforming the world for the better, and we experience God transforming each of us. <a href="htm/about.htm">click to learn more...</a></p></div>');
-	$("#sm-about_container").html('<div><h2>What We\'re About:</h2><p>UCF is a group of students at the University of Washington who desire to follow God with all we are.  We seek to be a place to belong, participate and transform.  We place high value on our friendships with each other and work hard to provide opportunities for them to both start and grow.  We welcome anyone to come and be part of UCF. <a href="htm/about.htm">click to read more...</a></p></div>');
+	$("#about_container").html('<div><h3>What We\'re About:</h3><p>UCF is a group of students at the University of Washington who desire to follow God with all we are.  We seek to be a place to belong, participate and transform.  We place high value on our friendships with each other and work hard to provide opportunities for them to both start and grow.  We welcome anyone to come and be part of UCF.  Whether you\'re just beginning to wonder about spirituality and who Jesus really is or have been following God for years, UCF is a place where you can ask questions, be challenged and grow by being a part of everything we are doing.  As each of us steps out to know Jesus better or to simply help those around us, we both take part in transforming the world for the better, and we experience God transforming each of us. <a href="htm/about.htm">click to learn more...</a></p></div>');
+	$("#sm-about_container").html('<div><h3>What We\'re About:</h3><p>UCF is a group of students at the University of Washington who desire to follow God with all we are.  We seek to be a place to belong, participate and transform.  We place high value on our friendships with each other and work hard to provide opportunities for them to both start and grow.  We welcome anyone to come and be part of UCF. <a href="htm/about.htm">click to read more...</a></p></div>');
 	if ($("title").attr("id") != "index") {
 		appendNav("../", "");
-		$("#logo_container").html('<img src="../img/ucf_logo.jpg">');
 	} else {
 		appendNav("", "htm/");
-		$("#logo_container").html('<img src="img/ucf_logo.jpg">');
 	}
-	$("#important_container").html('<h2>' + imp + '</h2>');
+	$("#important_container").html('<h3>' + imp + '</h3>');
+	$(window).ready(function() {
+		var height = $("#header_container").height();
+		var logoHeight = $("#logo_container").height();
+		var x = (height - logoHeight) / 2;
+		$("#logo_container").css("margin-top", x + "px");
+	});
 }
+
+// Resize function for logo
+$(window).resize(function() {
+	var height = $("#header_container").height();
+	var logoHeight = $("#logo_container").height();
+	var x = (height - logoHeight) / 2;
+	$("#logo_container").css("margin-top", x + "px");
+});
 
 // MAIN
 if ($("title").attr("id") != "index") {
@@ -55,5 +67,3 @@ if ($("title").attr("id") != "index") {
 } else {
 	appendCSS("");
 }
-// HOME WORK EXTRA CREDIT
-//setTimeout('alert("Hello You\'ve been here 3 seconds")', 3000);

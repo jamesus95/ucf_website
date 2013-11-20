@@ -41,14 +41,22 @@ body {
 	color: #320957;
 }
 
+/*important container red*/
 #important_container > * {
 	background-color: red;
 }
 
+/*bold*/
 .bold {
 	font-weight: bold;
 }
 
+/*underline*/
 .underline {
 	text-decoration: underline;
+}
+
+/*word wrap contacts email*/
+.contact {
+	word-wrap: break-word;
 }

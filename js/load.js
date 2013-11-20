@@ -24,14 +24,15 @@ function appendCSS(index) {
 	}
 }
 
-// Array of navs
-var tabs = ["Home", "index.htm", "Activities", "activities.htm", "Teams", "teams.htm", "Service Activities", "service.htm", "Cores", "cores.htm", "Contact", "contact.htm", "About", "about.htm"];
+// hide till loaded
+function hide() {
+	$("body").css("display", "none");
+}
 
-// Array of CSS documents
-var css = ["libs/bootstrap-theme.min.css", "libs/bootstrap.min.css", "css/style.css", "css/layout.css", "css/state.css"];
-
-// Important Announcement
-var imp = "IMPORTANT: SITE UNDER CONSTRUCTION";
+// Adjust screen size for small screens
+function size() {
+	
+}
 
 function load() {
 	// Title and about sections
@@ -50,8 +51,18 @@ function load() {
 		var logoHeight = $("#logo_container").height();
 		var x = (height - logoHeight) / 2;
 		$("#logo_container").css("margin-top", x + "px");
+		$("body").css("display", "inline");
 	});
 }
+
+// Array of navs
+var tabs = ["Home", "index.htm", "Activities", "activities.htm", "Teams", "teams.htm", "Service Activities", "service.htm", "Cores", "cores.htm", "Contact", "contact.htm", "About", "about.htm"];
+
+// Array of CSS documents
+var css = ["libs/bootstrap-theme.min.css", "libs/bootstrap.min.css", "css/style.css", "css/layout.css", "css/state.css"];
+
+// Important Announcement
+var imp = "IMPORTANT: SITE UNDER CONSTRUCTION";
 
 // Resize function for logo
 $(window).resize(function() {

@@ -4,12 +4,12 @@ var day = date.getDate();
 var year = date.getFullYear();
 var weekDay = date.getDay() + 1;
 
-var thisMonth = $("#thismonth_container");
-var nextMonth = $("#nextmonth_container");
-var swNextMonth = $("#sw-nextmonth_container");
-var thisWeek = $("#thisweek_container");
-var eventsContainer = $("#events_container");
-var calendar = $("#calendar_container")
+var thisMonth = $("#thismonth_inner");
+var nextMonth = $("#nextmonth_inner");
+var swNextMonth = $("#sw-nextmonth_inner");
+var thisWeek = $("#thisweek_inner");
+var eventsContainer = $("#events_inner");
+var calendar = $("#calendar_inner")
 
 
 function printLong(event) {

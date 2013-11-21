@@ -70,6 +70,9 @@ function load() {
 		var x = (height - logoHeight) / 2;
 		$("#logo_container").css("margin-top", x + "px");
 		$("body").css("display", "inline");
+		if ($(".container").height() < $(window).height()) {
+			$(".container").height($(window).height());
+		}
 	});
 }
 

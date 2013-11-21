@@ -38,6 +38,7 @@ nav a {
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
+	margin-bottom: 3px;
 	text-align: center;
 }
 
@@ -84,4 +85,9 @@ img {
 #nav-dropdown_container {
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+
+/*white goes all the way to bottom of page*/
+html, body, .container {
+	height: 100%;
 }

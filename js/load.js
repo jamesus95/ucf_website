@@ -74,7 +74,7 @@ function load() {
 }
 
 // Array of navs
-var tabs = ["Home", "index.htm", "Activities", "activities.htm", "Teams", "teams.htm", "Service Activities", "service.htm", "Core Study Groups", "cores.htm", "Contact", "contact.htm", "About", "about.htm"];
+var tabs = ["Home", "index.htm", "Activities", "activities.htm", "Teams", "teams.htm", "Service Activities", "service.htm", "Core Study Groups", "cores.htm", "Contact Information", "contact.htm", "About Us", "about.htm"];
 
 // Array of CSS documents
 var css = ["libs/bootstrap-theme.min.css", "libs/bootstrap.min.css", "css/style.css", "css/layout.css", "css/state.css"];

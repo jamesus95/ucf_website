@@ -38,6 +38,7 @@ nav a {
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
+	margin-bottom: 3px;
 	text-align: center;
 }
 
@@ -78,4 +79,20 @@ img {
 /*Contact word wrap*/
 .contact > p {
 	display: block;
+}
+
+/*center dropdown nav*/
+#nav-dropdown_container {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*white goes all the way to bottom of page*/
+html, body, .container {
+	height: 100%;
+}
+
+#title_container > p {
+	text-align: center;
+	font-size: 20px;
 }

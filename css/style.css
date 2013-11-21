@@ -18,9 +18,18 @@ ul {
 	list-style: none;
 }
 
-/*No underline on nav links*/
+/*nav link hover no underline color bold*/
 nav a:hover {
 	text-decoration: none;
+	font-weight: bold;
+	color: #FFFECA;
+	background-color: #320957;
+}
+
+/*Border on nav links*/
+nav a {
+	border: solid 2px #320957;
+	border-radius: 5px;
 }
 
 /*box color*/
@@ -41,14 +50,40 @@ body {
 	color: #320957;
 }
 
+/*important container red*/
 #important_container > * {
 	background-color: red;
 }
 
+/*bold*/
 .bold {
 	font-weight: bold;
 }
 
+/*underline*/
 .underline {
 	text-decoration: underline;
+}
+
+/*word wrap contacts email*/
+.contact {
+	word-wrap: break-word;
+}
+
+#dropdown_link {
+	text-decoration: none;
+	border: solid 2px #320957;
+	padding: 0px 5px;
+	border-radius: 5px;
+}
+
+#dropdown_link:hover {
+	background-color: #FFFECA;
+	color: #320957;
+}
+
+#title_container a:hover {
+	font-weight: bold;
+	color: #320957;
+	text-decoration: none;
 }

@@ -81,3 +81,9 @@ body {
 	background-color: #FFFECA;
 	color: #320957;
 }
+
+#title_container a:hover {
+	font-weight: bold;
+	color: #320957;
+	text-decoration: none;
+}

@@ -91,3 +91,8 @@ img {
 html, body, .container {
 	height: 100%;
 }
+
+#title_container > p {
+	text-align: center;
+	font-size: 20px;
+}

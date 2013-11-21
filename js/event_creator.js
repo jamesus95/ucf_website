@@ -67,7 +67,7 @@ function thisWeekEvents() {
 function eventsUpcoming() {
 	for (var i = 0; i < events.length; i++) {
 		if (events[i].month == month && events[i].day >= day) {
-			eventsContainer.append('<div><a class="event" id="' + events[i].id + '" href="htm/event_dyn.htm">' + printShort(events[i]) + "</a><br>" + events[i].descript + "</div>");
+			eventsContainer.append('<div><a class="event" id="' + events[i].id + '" href="htm/event_dyn.htm">' + printShort(events[i]) + "</a></div>");
 		}
 	}
 }

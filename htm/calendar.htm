@@ -5,7 +5,7 @@
 	<head>
 		<meta charset="UTF-8"></meta>
 
-		<title>UCF Quarter Calendar</title>
+		<title id="Quarter Calendar">UCF Quarter Calendar</title>
 
 		<script src="../libs/jquery-1.9.1.js"></script>
 		<script src="../libs/bootstrap.min.js"></script>
@@ -16,56 +16,28 @@
 	<body>
 		
 		<div class="container">
-			
-			<div class="row" id="header_container">
-				<div class="col-xs-4 col-md-3" id="logo_container"><img src="../img/ucf_logo.jpg"></div>
-				<div class="col-md-9 hidden-sm hidden-xs" id="title-about_container">
-					<div class="row" id="title_row">
-						<div class="col-md-12" id="title_container"></div>
-					</div>
-					<div class="row" id="about_row">
-						<div class="col-md-12" id="about_container"></div>
-					</div>
-				</div>
-				<div class="col-xs-8 hidden-md hidden-lg" id="sm-title_container"></div>
-			</div>
-			<div class="row" id="sm-about_row">
-				<div class="col-xs-12 hidden-md hidden-lg" id="sm-about_container"></div>
-			</div>
-			<div class="row" id="map_row">
-				<div class="col-xs-12 col-md-9 col-md-offset-3" id="map_container">
-					<a href="../index.htm">Home</a> >> <a href="activities.htm">Activities</a> >> <a href="calendar.htm">Calendar</a>
+			<div id="header">
+				<div class="row" id="header_container">
+					<div class="col-xs-4 col-md-3" id="logo_container"><img src="../img/ucf_logo.jpg"></div>
 				</div>
 			</div>
-			<div class="row" id="page-title_row">
-				<div class="col-md-10 col-md-offset-2" id="page-title_container">
-					<h2>Full Quarter Calendar</h2>
+			<div id="map">
+				<a href="../index.htm">Home</a> >> <a href="activities.htm">Activities</a> >> <a href="calendar.htm">Calendar</a>
+			</div>
+			<div class="row" id="content_row">
+				<div class="col-md-12" id="calendar_container">
+				<div id="calendar_inner">
+					<h3>Calendar</h3>
+					<br>
+				</div>
 				</div>
 			</div>
-			<div class="row" id="body_row">
-				<div class="col-md-2 hidden-sm hidden-xs" id="nav_container"></div>
-				<div class="col-md-2 hidden-md hidden-lg" id="nav-dropdown_container"></div>
-				<div class="col-md-10" id="body_container">
-					<div class="row" id="important_row">
-						<div class="col-md-12" id="important_container"></div>
-					</div>
-					<div class="row" id="content_row">
-						<div class="col-md-12" id="calendar_container">
-						<div id="calendar_inner">
-							<h2>Calendar</h2>
-							<br>
-						</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
 		</div>
 
+		<script>load();</script>
 		<script src="../js/event_lib.js"></script>
 		<script src="../js/event_creator.js"></script>
 		<script>
-			load();
 			quarterCalendar();
 		</script>
 

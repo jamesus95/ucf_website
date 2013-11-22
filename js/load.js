@@ -32,7 +32,12 @@ function load() {
 	$("#nav-dropdown_container").html(navDropdownContainer);
 	$("#nav_container").html(navContainer);
 	$("#content_row").html(content);
-	$("#page-title_container").html('<h2>' + $("title").html() + '</h2>');
+	if ($("title").attr("id") != 'index' && $("title").attr("id") != 'dyn') {
+		$("#page-title_container").html('<h2>' + $("title").attr("id") + '</h2>');
+	}
+	if ($("title").attr('id') == "Activities") {
+		$("#page-title_container").append('<a href="calendar.htm">Full Quarter Calendar</a>');
+	}
 	$("#map_container").html(breadCrumbs);
 
 	// Initial logo adjust and background extention
@@ -51,6 +56,9 @@ function load() {
 		var logoHeight = $("#logo_container").height();
 		var x = (height - logoHeight) / 2;
 		$("#logo_container").css("margin-top", x + "px");
+		if ($(".container").height() < $(window).height()) {
+			$(".container").height($(window).height());
+		}
 	});
 }
 

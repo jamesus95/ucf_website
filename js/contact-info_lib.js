@@ -18,6 +18,6 @@ function createContactNP(name, contactInfo, fact, animal, id) {
 
 $(window).ready(function() {
 	createContact("James Murphree", "Web Master", ["jamesus95@gmail.com", "206-853-6598", '<a href="https://www.facebook.com/james.murphree.98">Facebook</a>'], "I'm in the Husky Marching Band.", "Penguin", "jcm");
-	createContact("Amanda Sams", "Tuesday Core Leader", ["littlegreenfrog93@gmail.com", "206-953-8962"], "", "", "as");
+	createContact("Amanda Sams", "Tuesday Core Leader", ["littlegreenfrog93@gmail.com", "206-953-8962", '<a href="https://www.facebook.com/littlegreenfrog93">Facebook</a>'], "", "", "as");
 	createContact("Rebecca Church", "Internation Team Leader", [], "", "", "rc");
 });

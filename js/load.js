@@ -17,6 +17,8 @@ function load() {
 	// Appending HTML
 	var container = $(".container");
 	var header = $("#header").html();
+	var content = $("#content_row").html();
+
 	container.html("");
 	container.append(header);
 	$("#header_container").append(headerContainer);
@@ -28,6 +30,8 @@ function load() {
 	$("#important_container").html(important);
 	$("#nav-dropdown_container").html(navDropdownContainer);
 	$("#nav_container").html(navContainer);
+	$("#content_row").html(content);
+	$("#page-title_container").html('<h2>' + $("title").html() + '</h2>');
 
 	// Initial logo adjust and background extention
 	$(window).ready(function() {

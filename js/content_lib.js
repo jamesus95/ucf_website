@@ -1,10 +1,8 @@
-var breadCrumbs = "";
-
 var headerContainer = '<div class="col-md-9 hidden-sm hidden-xs" id="title-about_container"><div class="row" id="title_row"><div class="col-md-12" id="title_container"></div></div><div class="row" id="about_row"><div class="col-md-12" id="about_container"></div></div></div><div class="col-xs-8 hidden-md hidden-lg" id="sm-title_container"></div>';
 
 var smAboutRow = '<div class="row" id="sm-about_row"><div class="col-xs-12 hidden-md hidden-lg" id="sm-about_container"></div></div>';
 
-var mapRow = '<div class="row" id="map_row"><div class="col-xs-12 col-md-9 col-md-offset-3" id="map_container">' + breadCrumbs + '</div></div>';
+var mapRow = '<div class="row" id="map_row"><div class="col-xs-12 col-md-9 col-md-offset-3" id="map_container"></div></div>';
 
 var pageTitleRow = '<div class="row" id="page-title_row"><div class="col-md-10 col-md-offset-2" id="page-title_container"></div></div>';
 

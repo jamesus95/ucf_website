@@ -18,6 +18,7 @@ function load() {
 	var container = $(".container");
 	var header = $("#header").html();
 	var content = $("#content_row").html();
+	var breadCrumbs = $("#map").html();
 
 	container.html("");
 	container.append(header);
@@ -32,6 +33,7 @@ function load() {
 	$("#nav_container").html(navContainer);
 	$("#content_row").html(content);
 	$("#page-title_container").html('<h2>' + $("title").html() + '</h2>');
+	$("#map_container").html(breadCrumbs);
 
 	// Initial logo adjust and background extention
 	$(window).ready(function() {
@@ -43,7 +45,6 @@ function load() {
 			$(".container").height($(window).height());
 		}
 	});
-
 	// Resize logo adjust
 	$(window).resize(function() {
 		var height = $("#header_container").height();

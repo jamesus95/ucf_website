@@ -5,64 +5,35 @@
 	<head>
 		<meta charset="UTF-8"></meta>
 
+		<title id="Teams">Teams</title>
+
 		<script src="../libs/jquery-1.9.1.js"></script>
 		<script src="../libs/bootstrap.min.js"></script>
+		<script src="../js/content_lib.js"></script>
 		<script src="../js/load.js"></script>
-
-		<title>Teams</title>
 	</head>
 
 	<body>
 		
 		<div class="container">
-			
-			<div class="row" id="header_container">
-				<div class="col-xs-4 col-md-3" id="logo_container"><img src="../img/ucf_logo.jpg"></div>
-				<div class="col-md-9 hidden-sm hidden-xs" id="title-about_container">
-					<div class="row" id="title_row">
-						<div class="col-md-12" id="title_container"></div>
-					</div>
-					<div class="row" id="about_row">
-						<div class="col-md-12" id="about_container"></div>
-					</div>
+			<div id="header">
+				<div class="row" id="header_container">
+					<div class="col-xs-4 col-md-3" id="logo_container"><img src="../img/ucf_logo.jpg"></div>
 				</div>
-				<div class="col-xs-8 hidden-md hidden-lg" id="sm-title_container"></div>
 			</div>
-			<div class="row" id="sm-about_row">
-				<div class="col-xs-12 hidden-md hidden-lg" id="sm-about_container"></div>
-			</div>
-			<div class="row" id="map_row">
-				<div class="col-xs-12 col-md-9 col-md-offset-3" id="map_container">
+			<div id="map">
 					<a href="../index.htm">Home</a> >> <a href="teams.htm">Teams</a>
-				</div>
 			</div>
-			<div class="row" id="page-title_row">
-				<div class="col-md-10 col-md-offset-2" id="page-title_container">
-					<h2>Teams</h2>
-				</div>
+			<div class="row" id="content_row">
+				<div class="col-md-4"><div>Worship Team</div></div>
+				<div class="col-md-4"><div id="internation_team"></div></div>
+				<div class="col-md-4"><div id="web-dev_team"></div></div>
 			</div>
-			<div class="row" id="body_row">
-				<div class="col-md-2 hidden-sm hidden-xs" id="nav_container"></div>
-				<div class="col-md-2 hidden-md hidden-lg" id="nav-dropdown_container"></div>
-				<div class="col-md-10" id="body_container">
-					<div class="row" id="important_row">
-						<div class="col-md-12" id="important_container"></div>
-					</div>
-					<div class="row" id="content_row">
-						<div class="col-md-4"><div>Worship Team</div></div>
-						<div class="col-md-4"><div id="internation_team"></div></div>
-						<div class="col-md-4"><div id="web-dev_team"></div></div>
-					</div>
-				</div>
-			</div>
-
 		</div>
-
+		
+		<script>load();</script>
 		<script src="../js/team-info_lib.js"></script>
-		<script>
-			load();
-		</script>
-
+		
 	</body>
 
 </html>

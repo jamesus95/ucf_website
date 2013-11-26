@@ -5,78 +5,57 @@
 	<head>
 		<meta charset="UTF-8"></meta>
 
+		<title id="index">UCF UW</title>
+
 		<script src="libs/jquery-1.9.1.js"></script>
 		<script src="libs/bootstrap.min.js"></script>
-
-		<title id="index">UCF UW</title>
+		<script src="js/content_lib.js"></script>
 		<script src="js/load.js"></script>
 	</head>
 
 	<body>
 		
-		
 		<div class="container">
-			
-			<div class="row" id="header_container">
-				<div class="col-xs-4 col-md-3" id="logo_container"><img src="img/ucf_logo.jpg"></div>
-				<div class="col-md-9 hidden-sm hidden-xs" id="title-about_container">
-					<div class="row" id="title_row">
-						<div class="col-md-12" id="title_container"></div>
-					</div>
-					<div class="row" id="about_row">
-						<div class="col-md-12" id="about_container"></div>
-					</div>
-				</div>
-				<div class="col-xs-8 hidden-md hidden-lg" id="sm-title_container"></div>
-			</div>
-			<div class="row" id="sm-about_row">
-				<div class="col-xs-12 hidden-md hidden-lg" id="sm-about_container"></div>
-			</div>
-			<div class="row" id="map_row">
-				<div class="col-xs-12 col-md-9 col-md-offset-3" id="map_container">
-					<a href="index.htm">Home</a>
+			<div id="header">
+				<div class="row" id="header_container">
+					<div class="col-xs-4 col-md-3" id="logo_container"><img src="img/ucf_logo.jpg"></div>
 				</div>
 			</div>
-			<div class="row" id="body_row">
-				<div class="col-md-2 hidden-sm hidden-xs" id="nav_container"></div>
-				<div class="col-md-2 hidden-md hidden-lg" id="nav-dropdown_container"></div>
-				<div class="col-md-10" id="body_container">
-					<div class="row" id="important_row">
-						<div class="col-md-12" id="important_container"></div>
-					</div>
-					<div class="row" id="content_row">
-						<div class="col-lg-5 col-md-8" id="thisweek_container">
-							<div id="thisweek_inner">
-							<h3>This Week in UCF</h3>
-							<br>
-							</div>
-						</div>
-						<div class="col-lg-4 hidden-md hidden-sm hidden-xs" id="picture_container">
-							<div>
-							<h3>Picture of the Week</h3>
-							<br>
-							<img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-prn1/891621_10151936659771708_2080329190_o.jpg">
-							</div>
-						</div>
-						
-						<div class="col-lg-3 col-md-4 hidden-sm hidden-xs" id="events_container">
-							<div id="events_inner">
-							<h3>Upcoming Events</h3>
-							<br>
-							</div>
-						</div>
 
+			<div id="map">
+				<a href="index.htm">Home</a>
+			</div>
+
+			<div class="row" id="content_row">
+				<div class="col-lg-5 col-md-8" id="thisweek_container">
+					<div id="thisweek_inner">
+					<h3>This Week in UCF</h3>
+					<br>
 					</div>
 				</div>
+				<div class="col-lg-4 hidden-md hidden-sm hidden-xs" id="picture_container">
+					<div>
+					<h3>Picture of the Week</h3>
+					<br>
+					<img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-prn1/891621_10151936659771708_2080329190_o.jpg">
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-md-4 hidden-sm hidden-xs" id="events_container">
+					<div id="events_inner">
+					<h3>Upcoming Events</h3>
+					<br>
+					</div>
+				</div>
+
 			</div>
 
 		</div>
 
+		<script>load();</script>
 		<script src="js/event_lib.js"></script>
 		<script src="js/event_creator.js"></script>
-
 		<script>
-			load();
 			thisWeekEvents();
 			eventsUpcoming();
 		</script>

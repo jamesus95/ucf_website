@@ -26,8 +26,8 @@ function writeEvents() {
 		if (events[i].month == month && events[i].day >= day) {
 			thisMonth.append('<div><a class="event" id="' + events[i].id + '" href="event_dyn.htm">' + events[i].month + "/" + events[i].day + " " + events[i].title + "</a><br>" + events[i].descript + "</div>");
 		} else if (events[i].month == month + 1 || (events[i].month == 1 && month == 12)) {
-			nextMonth.append('<div><a class="event" id="' + events[i].id + '" href="event_dyn.htm">' + events[i].month + "/" + events[i].day + " " + events[i].title + "</a><br>" + events[i].descript + "</div>");
-			swNextMonth.append('<div><a class="event" id="' + events[i].id + '" href="event_dyn.htm">' + events[i].month + "/" + events[i].day + " " + events[i].title + "</a><br>" + events[i].descript + "</div>");
+			nextMonth.append('<div><a class="event" id="' + events[i].id + '" href="event_dyn.htm">' + events[i].month + "/" + events[i].day + " " + events[i].title + "</a></div>");
+			swNextMonth.append('<div><a class="event" id="' + events[i].id + '" href="event_dyn.htm">' + events[i].month + "/" + events[i].day + " " + events[i].title + "</a><br></div>");
 		}
 	}
 }

@@ -23,4 +23,8 @@
 		margin-bottom: 10px;
 	}
 
+	.contact, .core {
+		height: auto;
+	}
+
 }

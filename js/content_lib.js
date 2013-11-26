@@ -16,7 +16,7 @@ var aboutContainer = '<div><h3>What We\'re About:</h3><p>UCF is a group of stude
 
 var smAboutContainer = '<div><h3>What We\'re About:</h3><p>UCF is a group of students at the University of Washington who desire to follow God with all we are.  We seek to be a place to belong, participate and transform.  We place high value on our friendships with each other and work hard to provide opportunities for them to both start and grow.  We welcome anyone to come and be part of UCF. <a href="' + getAboutLinkPrefix() + 'about.htm">click to read more...</a></p></div>';
 
-var links = ["Home", "index.htm", "Activities", "activities.htm", "Teams", "teams.htm", "Service Activities", "service.htm", "Core Study Groups", "cores.htm", "Contact Information", "contact.htm", "About Us", "about.htm"];
+var links = ["Home", "index.htm", "Activities", "activities.htm", "Teams", "teams.htm", "Service Activities", "service.htm", "Core Groups", "cores.htm", "Contacts", "contact.htm", "About Us", "about.htm"];
 
 var css = ["libs/bootstrap-theme.min.css", "libs/bootstrap.min.css", "css/style.css", "css/layout.css", "css/state.css"];
 

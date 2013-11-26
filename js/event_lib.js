@@ -13,7 +13,9 @@ function makeEvent(month, day, weekDay, year, time, description, title, id) {
 }
 
 var events = new Array();
-events.push(makeEvent(11, 15, 6, 2013, "7:07pm", "This week we will be...", "Friday UCF Meeting", "1115707"));
-events.push(makeEvent(11, 22, 6, 2013, "7:07pm", "This week we will be...", "Friday UCF Meeting", "1122707"));
-events.push(makeEvent(11, 29, 6, 2013, "7:07pm", "This week we will be...", "Friday UCF Meeting", "1129707"));
-events.push(makeEvent(12, 10, 6, 2013, "7:07pm", "This week we will be...", "Friday UCF Meeting", "1210707"));
+
+// The Events that go on the page
+
+events.push(makeEvent(11, 26, 3, 2013, "6:00pm", "Come join us for a Thanksgiving feast at Dan Dameron's house (167 20th ave seattle, WA 98122). All are welcome free of charge (a.k.a. FREE FOOD!). Contact Dan if you need help finding a ride.", "Thanksgiving Feast", "1126600"));
+events.push(makeEvent(12, 6, 6, 2013, "7:07pm", "This week we will be meeting at Dan Dameron's house (167 20th ave seattle, WA 98122) for our ugly sweater Christmas Party. Bring an ugly sweater, a friend, and a white elephant gift ($5 max), and come have fun.", "Christmas Party", "126707"));
+events.push(makeEvent(12, 13, 6, 2013, "All Day", "Happy End of Finals week. Have a nice break and see you next year!", "End of Finals Week", "1213"));

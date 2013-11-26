@@ -1,3 +1,5 @@
+$(document).hide();
+
 // Appends CSS documents
 function appendCSS(index) {
 	for (var i = 0; i < css.length; i++) {
@@ -49,6 +51,7 @@ function load() {
 		if ($(".container").height() < $(window).height()) {
 			$(".container").height($(window).height());
 		}
+		$(document).show();
 	});
 	// Resize logo adjust
 	$(window).resize(function() {

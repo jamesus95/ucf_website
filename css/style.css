@@ -9,7 +9,7 @@ h3 {
 }
 
 /*Background Color*/
-.container {
+.container, #body_row {
 	background-color: white;
 }
 
@@ -37,11 +37,6 @@ nav a {
 	background-color: #FFFECA;
 	border: solid 2px #320957;
 	border-radius: 15px;
-}
-
-/*border*/
-#header_container, #body_row {
-	/*border: inset 5px black;*/
 }
 
 /*Sidebars background color*/

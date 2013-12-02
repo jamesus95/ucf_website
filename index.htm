@@ -58,6 +58,9 @@
 		<script>
 			thisWeekEvents();
 			eventsUpcoming();
+			$(".event").click(function(event) {
+				document.cookie = "event=" + event.target.id;
+			});
 		</script>
 
 	</body>

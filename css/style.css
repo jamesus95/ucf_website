@@ -39,11 +39,6 @@ nav a {
 	border-radius: 15px;
 }
 
-/*border*/
-#header_container, #body_row {
-	/*border: inset 5px black;*/
-}
-
 /*Sidebars background color*/
 body {
 	background-color: #320957;

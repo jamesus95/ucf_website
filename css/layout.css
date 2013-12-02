@@ -104,6 +104,6 @@ img {
 	margin-top: 80px;
 }
 
-.container {
+.container, body, html {
 	height: 100%;
 }

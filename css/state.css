@@ -27,4 +27,15 @@
 		height: auto;
 	}
 
+	#logo_container {
+		margin-top: 0;
+	}
+
 }
+
+@media(min-width: 1180px) {
+	#logo_container {
+		margin-top: 60px;
+	}
+}
+

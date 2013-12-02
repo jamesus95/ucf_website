@@ -42,20 +42,12 @@ function load() {
 
 	// Initial logo adjust and background extention
 	$(window).ready(function() {
-		var height = $("#header_container").height();
-		var logoHeight = $("#logo_container").height();
-		var x = (height - logoHeight) / 2;
-		$("#logo_container").css("margin-top", x + "px");
 		if ($(".container").height() < $(window).height()) {
 			$(".container").height($(window).height());
 		}
 	});
 	// Resize logo adjust
 	$(window).resize(function() {
-		var height = $("#header_container").height();
-		var logoHeight = $("#logo_container").height();
-		var x = (height - logoHeight) / 2;
-		$("#logo_container").css("margin-top", x + "px");
 		if ($(".container").height() < $(window).height()) {
 			$(".container").height($(window).height());
 		}

@@ -29,4 +29,7 @@ $(window).ready(function() {
 	createContact("Naomi Beth", "Wednesday Core Leader", ["206-673-7785", '<a href="https://www.facebook.com/naomi.deschane">Facebook</a>'], "I love to go on adventures", "Otter", "nb");
 	createContact("Dave Giles", "Group Leader", ["425-286-0214", "Dtgiles@aol.com"], "I'm known for being encouraging and I love to garden railroad", "", "dg");
 	createContact("Thomas Banham", "Tuesday Core Leader", ["360-398-3120", "thomas.e.banham@gmail.com"], "", "Snow Leopard", "tb");
+	createContact("Dan Dameron", "Group Leader", ["206-660-5541", "dan.dameron@psxa.org"], "I like riding motorcycles", "Monkeys", "dd");
+	createContact("Joseph Banham", "Wednesday Core Leader", ["5021 Brooklyn Ave NE Seattle, WA 98248, 360-201-6264", "joesph.banham@gmail.com"], "", "", "jb");
+	createContact("Mikah Franz", "Wedneday Core Leader", ["mikahf@uw.edu"], "I have ridden dirt bikes for more than 10 years", "Snowy Owl", "mf");
 });

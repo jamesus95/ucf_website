@@ -111,3 +111,7 @@ img {
 .team {
 	height: 476px;
 }
+
+.centered {
+	text-align: center;
+}

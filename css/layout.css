@@ -107,3 +107,7 @@ img {
 .container, body, html {
 	height: 100%;
 }
+
+.team {
+	height: 476px;
+}

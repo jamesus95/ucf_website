@@ -74,11 +74,10 @@ function eventsUpcoming() {
 
 // Quarter Calender
 function quarterCalendar() {
-	var quarterStart = 9152013
-	var quarterEnd = 12152013
+	var quarterStart = 9150000
+	var quarterEnd = 12150000
 	for (var i = 0; i < events.length; i++) {
-		var d = "" + events[i].month + events[i].day + events[i].year;
-		if (d > quarterStart && d < quarterEnd) {
+		if (events[i].id > quarterStart && events[i].id < quarterEnd) {
 			calendar.append('<div><a class="event" id="' + events[i].id + '" href="event_dyn.htm">' + events[i].month + "/" + events[i].day + " " + events[i].title + "</a>" + events[i].descript + "</div>");
 		}
 	}

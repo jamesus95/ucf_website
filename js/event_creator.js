@@ -13,7 +13,7 @@ var calendar = $("#calendar_inner")
 
 
 function printLong(event) {
-	return event.title + "<br>" + "Date: " + event.month + "/" + event.day + "/" + event.year + "<br>" + "Time: " +  event.startTime + "<br>" + event.descript;
+	return event.title + "<br>" + "Date: " + event.month + "/" + event.day + "/" + event.year + "<br>" + "Time: " +  event.startTime + "<br>" + "Location: " + event.location + "<br><br>" + event.descript;
 }
 
 function printShort(event) {
@@ -74,11 +74,7 @@ function eventsUpcoming() {
 
 // Quarter Calender
 function quarterCalendar() {
-	var quarterStart = 9150000
-	var quarterEnd = 12150000
 	for (var i = 0; i < events.length; i++) {
-		if (events[i].id > quarterStart && events[i].id < quarterEnd) {
-			calendar.append('<div><a class="event" id="' + events[i].id + '" href="event_dyn.htm">' + events[i].month + "/" + events[i].day + " " + events[i].title + "</a>" + events[i].descript + "</div>");
-		}
+		calendar.append('<div><a class="event" id="' + events[i].id + '" href="event_dyn.htm">' + events[i].month + "/" + events[i].day + " " + events[i].title + "</a> " + events[i].descript + "</div><br>");
 	}
 }

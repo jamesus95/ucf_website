@@ -32,4 +32,5 @@ $(window).ready(function() {
 	createContact("Dan Dameron", "Group Leader", ["206-660-5541", "dan.dameron@psxa.org"], "I like riding motorcycles", "Monkeys", "dd");
 	createContact("Joseph Banham", "Wednesday Core Leader", ["5021 Brooklyn Ave NE Seattle, WA 98248, 360-201-6264", "joesph.banham@gmail.com"], "", "", "jb");
 	createContact("Mikah Franz", "Wedneday Core Leader", ["mikahf@uw.edu"], "I have ridden dirt bikes for more than 10 years", "Snowy Owl", "mf");
+	createContact("Yuky Li", "Service Team Leader", ["408-914-5992", "rli1015@uw.edu"], "Sometimes I can eat more than boys even though I'm not very big", "Panda or Dolphin", "yl");
 });

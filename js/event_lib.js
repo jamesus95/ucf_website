@@ -29,8 +29,11 @@ events.push(makeEvent(2,28,6,2014,"7:07pm","This week after our weekly meeting w
 events.push(makeEvent(3,7,6,2014,"7:07pm","...","Friday UCF: Choose your own Adventure","Seig (7:07pm) ... (After Event)","03071907"));
 events.push(makeEvent(3,14,6,2014,"7:07pm","...","Friday UCF: Pie Party","Seig (7:07pm) ... (After Event)","03141907"));
 
-function addEventGroup(month, day, weekDay, year, time, description, title, location, milTime, repreat, noMeet) {
-	for (var i = 0, i < repeat, i++) {
+addEventGroup(1,9,5,2014,"4:30pm","Help international students learn English phrases and understand it better.","English Conversation Group","HUB room 337",1630,10,[]);
+
+
+function addEventGroup(month, day, weekDay, year, time, description, title, location, milTime, repeat, noMeet) {
+	for (var i = 0; i < repeat; i++) {
 		if (month == 2 && day > 28) {
 			day -= 28;
 			month++;
@@ -75,16 +78,20 @@ function addEvent(event) {
 				if (events[i].id < event.id) {
 					i++;
 				} else {
-					events.splice(1,0,event);
+					events.splice(i,0,event);
 					insert = true;
 				}
 			} else {
-				events.splice(1,0,event);
-				insert = true;
+				if (insert == false) {
+					events.splice(i,0,event);
+					insert = true;
+				}
 			}
 		} else {
-			events.splice(1,0,event);
-			insert = true;
+			if (insert == false) {
+				events.splice(i,0,event);
+				insert = true;
+			}
 		}
 	}
 }

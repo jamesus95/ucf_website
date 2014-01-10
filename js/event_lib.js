@@ -30,7 +30,7 @@ events.push(makeEvent(3,7,6,2014,"7:07pm","...","Friday UCF: Choose your own Adv
 events.push(makeEvent(3,14,6,2014,"7:07pm","...","Friday UCF: Pie Party","Seig (7:07pm) ... (After Event)","03141907"));
 
 addEventGroup(1,9,5,2014,"4:30pm","Help international students learn English phrases and understand it better.","English Conversation Group","HUB room 337",1630,10,[]);
-
+//addEventGroup(0,0,0,0000,"","","Casual English Conversation Group","",0000,00,[]);
 
 function addEventGroup(month, day, weekDay, year, time, description, title, location, milTime, repeat, noMeet) {
 	for (var i = 0; i < repeat; i++) {

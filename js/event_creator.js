@@ -57,7 +57,7 @@ function displayEvent() {
 // Main page "this week" section
 function thisWeekEvents() {
 	for (var i = 0; i < events.length; i++) {
-		if (events[i].day - events[i].weekDay == day - weekDay && events[i].day >= day) {
+		if (events[i].day - events[i].weekDay == day - weekDay && events[i].day >= day && events[i].month == month) {
 			thisWeek.append('<div><a class="event" id="' + events[i].id + '" href="htm/event_dyn.htm">' + events[i].month + "/" + events[i].day + " " + events[i].title + "</a><br>" + events[i].descript + "</div>");
 		}
 	}

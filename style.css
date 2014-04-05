@@ -1,0 +1,28 @@
+#one {
+	font-size: 36px;
+	font-weight: bold;
+	color: red; 
+}
+
+#two {
+	font-size: 24px;
+	color: yellow;
+}
+
+#three {
+	font-size: 28px;
+	color: blue;
+}
+
+#four {
+	font-size: 48px;
+	color: red;
+}
+
+p {
+	text-align: center;
+}
+
+html {
+	background-color: #320957;
+}
